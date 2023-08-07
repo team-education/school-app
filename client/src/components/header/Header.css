@@ -1,0 +1,40 @@
+header,
+footer {
+  background-color: chartreuse;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+
+.Sign {
+  border: 1px solid goldenrod;
+  border-radius: 4%;
+  background-color: rgb(206, 21, 21);
+  color: goldenrod;
+  width: 300px;
+  font-size: 2rem;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+h1 {
+  text-align: center;
+}
+
+ul li {
+  margin: 1rem;
+  align-items: center;
+}
+
+.Nav-butt {
+  display: flex;
+}
