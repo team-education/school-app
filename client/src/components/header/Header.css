@@ -38,3 +38,38 @@ ul li {
 .Nav-butt {
   display: flex;
 }
+
+@media screen and (max-width: 767px) {
+  .Sign {
+    max-width: 90%;
+    height: auto;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+  }
+}
+
+/*Tablet  */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .Sign {
+    max-width: 120%;
+    height: auto;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+  }
+}
+/* Desktop style */
+@media screen and (min-width: 1024px) {
+  .Sign {
+    max-width: 150%;
+    max-height: auto;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+  }
+}
+
+img {
+  align-items: center;
+}

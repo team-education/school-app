@@ -10,8 +10,9 @@ function CustomCarousel() {
       autoPlay={true}
       interval={3000}
       infiniteLoop={true}
+      showThumbs={false}
     >
-      <div>
+      <div className="carousel">
         <img
           src="https://images.pexels.com/photos/2781814/pexels-photo-2781814.jpeg?auto=compress&cs=tinysrgb&w=1600"
           alt="slide 1"

@@ -1,11 +1,11 @@
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./Reset.css";
 import "./App.css";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
 import News from "./pages/news/News";
-
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
