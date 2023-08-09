@@ -1,0 +1,12 @@
+@media screen and (min-width: 300px) {
+  img {
+    max-width: 300px;
+    height: auto;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .thumbs {
+    max-width: 30px;
+    height: auto;
+  }
+}
