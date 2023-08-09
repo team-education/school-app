@@ -1,0 +1,55 @@
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+.school-image-container {
+  justify-content: center;
+ 
+}
+
+
+.header-area {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.image-size{
+    max-width: 600px; /* Set the maximum width for the image */
+    height: 200px; /* Maintain the aspect ratio */
+}
+.size-image {
+  width: 300px;
+  height: 200px;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 15px;
+  text-align: center;
+}
+.schoollink {
+  text-align: center;
+}
+.mission-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 50%; /* Set to half of the width of the page */
+  margin: 0 auto; /* Center the container horizontally */
+  border: 1px solid #ccc; /* Add a border for visual separation */
+  padding: 10px;
+}
+
+.statement {
+  width: calc(50% - 20px); /* Half of the width minus padding */
+}

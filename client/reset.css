@@ -1,0 +1,13 @@
+/* reset.css */
+
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Reset font properties */
+  body {
+    font-family: Arial, sans-serif;
+  }
