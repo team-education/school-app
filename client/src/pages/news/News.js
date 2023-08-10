@@ -42,13 +42,21 @@ export default function News() {
 
   return (
     <>
-      <div className="News">
-        <h2>School News</h2>
-        <div>
+      <div className="NewsPage">
+        <div className="NewsPageHead">
+          <p>School News Feeder</p>
+          <h3>This is meant to be in access controlled area - stretch goal</h3>
+        </div>
+        <div className="NewsForm">
           <NewsForm onSubmitFunc={console.log("")} />
         </div>
-        <div>
-          <NewsCard news={news}></NewsCard>
+        <div className="NewsNews">
+          <div className="NewsNewsHead">
+            <p>School News</p>
+          </div>
+          <div className="NewsItems">
+            <NewsCard news={news}></NewsCard>
+          </div>
         </div>
       </div>
     </>
