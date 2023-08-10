@@ -1,27 +1,46 @@
 const express = require("express");
 const cors = require("cors");
-//const mongoose = require("mongoose");
-const bp = require("body-parser");
+const mongoose = require("mongoose");
+const Student = require("./Models/Students");
 require("dotenv").config();
-const PORT = process.env.PORT || 8086;
-
-// const News = mongoose.model(News, schoolNewsReport);
-//const News = require("./models/school-news");
-
-//mongoose.connect(process.env.DATABASE_URL);
+const bp = require("body-parser");
+const PORT = process.env.PORT || 8080;
 
 const app = express();
 app.use(cors());
 app.use(bp.json());
 
-//connect to mongoDB
-// mongoose
-//   .connect(process.env.DATABASE_url)
-//   .then(() => console.log("DB connected"));
-// //create an endpoint
-
+mongoose.connect(process.env.DATABASE_URL);
 app.get("/", (request, response) => {
-  response.status(200).json({ welcome: "Just a check!" });
+  response.status(200).json("test request received");
 });
 
-app.listen(PORT, () => console.log(`App is listening on port ${PORT}`));
+app.get("/student", async (request, response) => {
+  const allStudents = await Student.find(request.query);
+  console.log("I am a student");
+  response.status(200).json(allStudents);
+});
+
+app.post("/student", async (request, response) => {
+  try {
+    const newStudent = await Student.create(request.body);
+    response.status(200).json(newStudent);
+  } catch (error) {
+    response.status(500).json(error);
+  }
+
+});
+
+app.delete('/student/:id' , async (request, response) => {
+  console.log(request)
+  try {
+      const id = request.params.id;
+      console.log(id)
+      const deletedStudent = await Student.findByIdAndDelete(id)
+      response.status(200).json(deletedStudent)
+  } catch (err) {
+      response.status(500).json(err)
+  }
+})
+app.listen(PORT, () => console.log(`listening on ${PORT}`));
+
