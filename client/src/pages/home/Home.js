@@ -13,10 +13,11 @@ export default function Home() {
         />
         <link rel="canonical" href="/" />
       </Helmet>
-      <main>
-        <Main />
-        <h2>this is the home page</h2>
-        <p>This is done for the 301 project</p>
+      <main className="main1">
+        <div className="item1">
+          <Main />
+        </div>
+        <div className="item2"></div>
       </main>
     </>
   );
