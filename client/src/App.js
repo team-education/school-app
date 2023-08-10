@@ -1,3 +1,5 @@
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./Reset.css";
 import "./App.css";
 import Header from "./components/header/Header";
@@ -8,8 +10,6 @@ import About from "./pages/about-us/About-us";
 import Contact from "./pages/contact-us/Contact-us";
 import Student from "./pages/Student/student";
 
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
