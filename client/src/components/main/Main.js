@@ -58,8 +58,9 @@ export default function Main() {
             </li>
             <li>
               Thanks so much all Teaching Staff and non teaching staff. Without
-              the teaching staff, this would have not gone even to the Trello
-              board. Thanks so much for your able guidance, support and SUPPORT
+              the assistance of our teaching staff, this would not have gone
+              even to the 'Trello board'. Thanks so much for your able guidance,
+              support and SUPPORT
             </li>
           </ul>
         </div>

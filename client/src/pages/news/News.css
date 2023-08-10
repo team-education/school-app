@@ -1,0 +1,33 @@
+.NewsPage {
+  display: flex;
+  flex-direction: column;
+}
+.NewsPageHead {
+  background-color: green;
+  font-size: 2rem;
+
+  padding: 10px;
+  color: yellow;
+}
+.NewsForm {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2rem;
+  border: 1px solid black;
+}
+.NewsNews {
+  margin-top: 20px;
+}
+
+.NewsNewsHead {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 4rem;
+  background-color: green;
+  color: yellow;
+  height: 60px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
