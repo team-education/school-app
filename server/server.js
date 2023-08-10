@@ -7,16 +7,11 @@ require("dotenv").config();
 const PORT = process.env.PORT || 8086;
 const News = require("./models/news.js");
 
-
-
 const Student = require("./Models/Students");
-
 
 const app = express();
 app.use(cors());
 app.use(bp.json());
-
-
 
 mongoose.connect(process.env.DATABASE_URL);
 
@@ -67,19 +62,18 @@ app.post("/student", async (request, response) => {
   } catch (error) {
     response.status(500).json(error);
   }
-
 });
 
-app.delete('/student/:id' , async (request, response) => {
-  console.log(request)
+app.delete("/student/:id", async (request, response) => {
+  console.log(request);
   try {
-      const id = request.params.id;
-      console.log(id)
-      const deletedStudent = await Student.findByIdAndDelete(id)
-      response.status(200).json(deletedStudent)
+    const id = request.params.id;
+    console.log(id);
+    const deletedStudent = await Student.findByIdAndDelete(id);
+    response.status(200).json(deletedStudent);
   } catch (err) {
-      response.status(500).json(err)
+    response.status(500).json(err);
   }
-})
+});
 
-app.listen(PORT, () => console.log(listening on ${PORT}));
+app.listen(PORT, () => console.log(`listening on ${PORT}`));

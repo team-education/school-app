@@ -4,7 +4,7 @@ export default function NewsForm({ onSubmitFunc, news }) {
   const [formData, setFormData] = useState({
     title: "",
     date: "",
-    news: "",
+    newsItem: "",
   });
 
   const handleChange = (event) => {
@@ -14,7 +14,7 @@ export default function NewsForm({ onSubmitFunc, news }) {
 
   const submit = (event) => {
     event.preventDefault();
-    // whatever was passed as tthe prop
+    // whatever was passed as the prop
     onSubmitFunc(formData);
   };
 
@@ -37,8 +37,7 @@ export default function NewsForm({ onSubmitFunc, news }) {
       <textarea
         type="textarea"
         onChange={handleChange}
-        name="news"
-        value={formData.news}
+        name="newsItem"
         placeholder="News article"
         rows="4"
       ></textarea>

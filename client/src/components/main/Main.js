@@ -10,9 +10,9 @@ export default function Main() {
           <CustomCarousel />
         </div>
         <div className="MainText">
-          <h2>School is in need of a new website for two reasons:</h2>
+          <h2>School is in need of a new website for two main reasons:</h2>
           <ul>
-            <li>Information dissemination</li>
+            <li>Make information dissemination efficient</li>
             <li>
               To replace current, mainly paper-based systems with an online
               mobile-friendly system (for application, student reports, teacher

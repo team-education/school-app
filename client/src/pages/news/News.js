@@ -16,7 +16,8 @@ export default function News() {
   }, []);
 
   async function getNews() {
-    const result = await axios.get("http://localhost:8086/news");
+    let API = `http://localhost:8086/news`;
+    const result = await axios.get(API);
     console.log(result.data);
     setNews(result.data);
   }
@@ -26,6 +27,7 @@ export default function News() {
   async function addNewsArticle(formData) {
     const result = await axios.post("http://localhost:8086/news", formData);
     setNews([...news, result.data]);
+    console.log(result);
   }
 
   // delete articles
@@ -48,7 +50,7 @@ export default function News() {
           <h3>This is meant to be in access controlled area - stretch goal</h3>
         </div>
         <div className="NewsForm">
-          <NewsForm onSubmitFunc={console.log("")} />
+          <NewsForm onSubmitFunc={addNewsArticle} />
         </div>
         <div className="NewsNews">
           <div className="NewsNewsHead">

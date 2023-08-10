@@ -27,6 +27,9 @@ export default function Header() {
           <li>
             <Link to="/news">News</Link>
           </li>
+          <li>
+            <Link to="/student">Students</Link>
+          </li>
         </ul>
       </nav>
     </header>

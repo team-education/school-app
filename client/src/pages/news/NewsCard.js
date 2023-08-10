@@ -10,6 +10,7 @@ export default function NewsCard({ news }) {
             <p>{story.date}</p>
             {/* p tag for now, look into text area */}
             <p>{story.newsItem}</p>
+            <p>___________________________________________</p>
           </>
         );
       })}
