@@ -3,85 +3,71 @@ import AddStudent from "../../components/AddStudent";
 import image1 from "../../images/image1.avif";
 import image2 from "../../images/image2.avif";
 import image3 from "../../images/image3.avif";
-import image4 from "../../images/image4.avif";
-
+import image6 from "../../images/image6.avif";
+import image7 from "../../images/image7.avif";
+import image8 from "../../images/image8.avif";
+import image9 from "../../images/image9.avif";
 export default function About() {
   return (
     <main>
       <div className="header-area">
-        <h1>About Us</h1>
-        <h2>The Rising Sun College</h2>
+        <h1 className="header-name">The Rising Sun College</h1>
         <div className="image-container">
-          <img src={image4} alt="" className="image-size" />
+          <img src={image6} alt="" className="size-image with-border" />
+          <img src={image7} alt="" className="size-image with-border" />
+          <img src={image8} alt="" className="size-image with-border" />
+          <img src={image9} alt="" className="size-image with-border" />
+          {/* <img src={image1} alt="" className="size-image with-border" /> */}
         </div>
       </div>
-
-      <div className="mission-container">
-        <div className="statement">
-          <h4>Our Vision</h4>
-          <p>
-            A world where education will not be seen as luxury but a necessity
-            for all.
+      <div className="body">
+        <div className="mission-vision">
+          {/* <div className="statement"> */}
+          <h4 className="vision-statement">Our Vision</h4>
+          <p className="vision-content">
+            To help create a world education will not be seen as a global luxury
+            but as a fundamental necessity for all.
           </p>
-        </div>
 
-        <div className="statement">
-          <h4>Our Mission</h4>
-          <p>
+          <h4 className="mission-statement">Our Mission</h4>
+          <p className="mission-content">
             To improve global access to quality education and tutors through the
             deployment of cost-effective educational based apps and
             technologies.
           </p>
         </div>
-      </div>
 
-      <div className="mission-container">
-        <div className="statement">
-          <h4>Our Clients</h4>
-          <p>
-            Professionals who are looking for schools that will allow them have
-            peace of mind at work. We are a school where parents can concentrate
-            on their jobs knowing fully well very capable hands are taking care
-            of their children.
+        <div className="clients-values">
+          <h4 className="client-statement">Our Clients</h4>
+          <p className="client-content">
+            We work with very busy parents who are interested in the best outcomes
+            any school can possible provide for children. These are parents who wish to concentrate fully well at work knowing that the best hands are looking after their children.
+          </p>
+
+          <h4 className="core-value">Our Core Values</h4>
+          <p className="core-value-content">
+            We value honesty;
+            <div>We work smart and hard;</div>
+            We persevere
           </p>
         </div>
-
-        <div className="statement">
-          <h4>Our Core Values</h4>
-          <p>Honesty, hardwork and perseverance.</p>
-        </div>
       </div>
-      {/* 
-      <label htmlFor="mission">Mission Statement:</label>
-      <textarea
-        id="mission"
-        rows="4"
-        cols="50"
-        className="mission-textarea"
-        defaultValue="Our mission is to..."
-      ></textarea> */}
-
       <div className="image-container">
         <div>
-          <img src={image1} alt="" className="size-image" />
-          <h3>Chidi Ononye - co-founder</h3>
+          <img src={image1} alt="" className="size-image with-border" />
+          <h3 className="founder-name">Chidi Ononye - CEO</h3>
         </div>
 
         <div>
-          <img src={image2} alt="" className="size-image" />
-          <h3>Qasim Aswan - co-founder</h3>
+          <img src={image2} alt="" className="size-image with-border" />
+          <h3 className="founder-name">Qasim Aswan - CTO</h3>
         </div>
 
         <div>
-          <img src={image3} alt="" className="size-image" />
-          <h3>Bernad Jaggart - co-founder</h3>
+          <img src={image3} alt="" className="size-image with-border" />
+          <h3 className="founder-name">Bernad Jaggart - CFO</h3>
         </div>
-      </div>
-      <div>
-        <div className="schoollink">
-          <a href="https://github.com/">github</a>
-        </div>
-      </div>
+      </div>{" "}
     </main>
   );
 }
