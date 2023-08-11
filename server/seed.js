@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
+import student from "./Models/Student"
 
 mongoose.connect(process.env.DATABASE_URL);
 const News = require("./models/news.js");
-const Student = require("./models/Students")
+const Student = require("./Models/Students")
 
 async function seed() {
   await News.create({
@@ -39,7 +40,7 @@ await Student.create({
     grade: 9,
     attendance: True
 })
-  console.log("Created a new news item");
+  console.log("All about the school");
   mongoose.disconnect();
 }
 

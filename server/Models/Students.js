@@ -4,9 +4,9 @@ const { Schema } = mongoose;
 
 const studentSchema = new Schema({
   name: String,
-  age: Number,
-  grade: Number,
-  attendance: Boolean,
+  age: String,
+  grade: String,
+  attendance: Boolean
 });
 
 const Student = mongoose.model("Student", studentSchema);
