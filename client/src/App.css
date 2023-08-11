@@ -5,14 +5,14 @@
 }
 
 main {
-  background-color:orange; 
+  background-color: orange;
 }
 .header-name {
   color: yellow;
   text-align: center;
   font-size: 40px;
   font-weight: 100;
-  background-color:tomato;
+  background-color: tomato;
 }
 
 .founder-name {
@@ -20,126 +20,151 @@ main {
   font-size: 20px;
   text-align: center;
 }
-    
 
-  .vision-statement{
-    background-color:orange;
-    color:purple;
-    font-size: 25px;
-    margin-top: 20px;
+.vision-statement {
+  background-color: orange;
+  color: purple;
+  font-size: 25px;
+  margin-top: 20px;
+}
 
-  }
+.vision-content {
+  width: 600px;
+  height: 80px;
+  background-color: yellowgreen;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  padding-top: 20px;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+}
 
-  .vision-content{
-    width: 600px;
-    height: 80px;
-    background-color: yellowgreen;
-    color: black;
-    font-size: 20px;
-    text-align:center;
-    margin: 20px;
-    padding-top: 20px;
-    border-style: solid;
-    border-color: white;
-    border-width: 3px;
+.mission-statement {
+  background-color: orange;
+  color: navy;
+  font-size: 25px;
+  margin-top: 20px;
+}
 
-  }
+.mission-content {
+  width: 600px;
+  height: 80px;
+  background-color: yellowgreen;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  padding-top: 20px;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+}
 
-  .mission-statement{
-    background-color:orange;
-    color:navy;
-    font-size: 25px;
-    margin-top: 20px;
+.client-statement {
+  background-color: orange;
+  color: teal;
+  font-size: 25px;
+  margin-top: 20px;
+}
+.client-content {
+  width: 600px;
+  height: 80px;
+  background-color: #001f3f;
+  color: greenyellow;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+  border-style: solid;
+  border-color: yellowgreen;
+  border-width: 3px;
+}
 
-  }
+.core-value {
+  background-color: orange;
+  color: black;
+  font-size: 25px;
+  margin-top: 20px;
+}
+.core-value-content {
+  width: 600px;
+  height: 100px;
+  background-color: #001f3f;
+  color: greenyellow;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  padding-top: 20px;
+  border-style: solid;
+  border-color: yellowgreen;
+  border-width: 3px;
+}
 
-       
-  .mission-content{
-    width: 600px;
-    height: 80px;
-    background-color: yellowgreen;
-    color: black;
-    font-size: 20px;
-    text-align:center;
-    margin: 20px;
-    padding-top: 20px;
-    border-style: solid;
-    border-color: white;
-    border-width: 3px;
+.size-image {
+  /* Set the size of image */
+  width: 300px;
+  height: 150px;
+}
 
-  }
+.with-border {
+  border: 5px solid #333; /* Example border style */
+  border-radius: 5px; /* Optional: Add rounded corners to the border */
+  border-color: lightcoral;
+  border-radius: 30px;
+}
 
-  .client-statement{
-    background-color:orange;
-    color:teal;
-    font-size: 25px;
-    margin-top: 20px;
-
-  }
-  .client-content{
-    width: 600px;
-    height: 80px;
-    background-color: #001f3f;
-    color: greenyellow;
-    font-size: 20px;
-    text-align:center;
-    margin: 20px;
-    padding-top: 13px;
-    padding-bottom: 10px;
-    border-style: solid;
-    border-color: yellowgreen;
-    border-width: 3px;
-  }
-
-  .core-value{
-    background-color:orange;
-    color:black;
-    font-size: 25px;
-    margin-top: 20px;
-
-  }
-  .core-value-content{
-    width: 600px;
-    height: 100px;
-    background-color: #001f3f;
-    color: greenyellow;
-    font-size: 20px;
-    text-align:center;
-    margin: 20px;
-    padding-top: 20px;
-    border-style: solid;
-    border-color: yellowgreen;
-    border-width: 3px;
-  }  
-            
-       .size-image{
-       /* Set the size of image */
-          width: 300px;
-          height: 150px;
-                  
-       }
-
-       .with-border{
-        border: 5px solid #333; /* Example border style */
-        border-radius: 5px; /* Optional: Add rounded corners to the border */
-        border-color: lightcoral;
-        border-radius: 30px;
-       }
-
-       .image-container {
-     /* Set the desired width */
-        width: auto;
-        height: auto; /* Maintain aspect ratio */
-        margin: 20; /* Center the image horizontally */
-        display: flex;
-        justify-content: center;
-        /* border-style: solid;
+.image-container {
+  /* Set the desired width */
+  width: auto;
+  height: auto; /* Maintain aspect ratio */
+  margin: 20; /* Center the image horizontally */
+  display: flex;
+  justify-content: center;
+  /* border-style: solid;
         border-width: 2px; */
-        background-color:tomato;
-      }
+  background-color: tomato;
+}
 
-      .body {
-        display: flex;
-        gap: 40px;
-        margin-left: 100px;
-      }
+.body {
+  display: flex;
+  gap: 40px;
+  margin-left: 100px;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Add some top margin if needed */
+}
+
+.student-table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.student-table th,
+.student-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  border-color: red;
+  border-style: solid;
+  border-width: 3px;
+  background-color: gold;
+}
+
+.student-table th {
+  background-color: white;
+  font-weight: bold;
+  color: teal;
+  font-size: 20px;
+}
+
+.student-register {
+  background-color: teal;
+}
